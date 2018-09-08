@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "serverless-offline": "^3.25.11"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.311.0",
+    "aws-signature-v4": "^1.2.1",
+    "crypto": "^1.0.1"
+  }
+}

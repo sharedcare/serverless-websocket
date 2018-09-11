@@ -79,10 +79,10 @@ functions:
           method: GET
           path: /iot-presigned-url
     environment:
-      IOT_AWS_REGION: 'us-east-2'
-      IOT_ENDPOINT_HOST: 'a2i4oy49a0ysxn.iot.us-east-2.amazonaws.com'
-      IOT_ACCESS_KEY: 'AKIAJ3WJDJ4VHTA3CAVQ'
-      IOT_SECRET_KEY: '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'
+      IOT_AWS_REGION: '<IOT_REGION>'
+      IOT_ENDPOINT_HOST: '<IOT_ENDPOINT_URL>'
+      IOT_ACCESS_KEY: '<IOT_ACCESS_KEY_ID>'
+      IOT_SECRET_KEY: '<IOT_SECRET_ACCESS_KEY>'
 
   notifyDisconnect:
     handler: src/notifyDisconnect.handler
@@ -91,8 +91,8 @@ functions:
       - iot:
           sql: "SELECT * FROM 'last-will'"
     environment:
-      IOT_AWS_REGION: 'us-east-2'
-      IOT_ENDPOINT_HOST: 'a2i4oy49a0ysxn.iot.us-east-2.amazonaws.com'
+      IOT_AWS_REGION: '<IOT_REGION>'
+      IOT_ENDPOINT_HOST: '<IOT_ENDPOINT_URL>'
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
